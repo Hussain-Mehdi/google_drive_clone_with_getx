@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "445691487322",
+    "firebase_url": "https://drive-clone-e2e8f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "drive-clone-e2e8f",
+    "storage_bucket": "drive-clone-e2e8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445691487322:android:39a88e803bbb72f314a463",
+        "android_client_info": {
+          "package_name": "com.example.google_drive_clone_with_getx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZWJu8jmwegfIFn9aqloTIhwN0mS6qo68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
