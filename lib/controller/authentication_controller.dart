@@ -13,18 +13,13 @@ class AuthController extends GetxController {
   }
 
   login() async {
-    print("===============================>");
-
     GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
-    print("=======================>after");
     if (googleUser != null) {
-      print("user is not null===========");
       GoogleSignInAuthentication googleAuth = await googleUser.authentication;
       AuthCredential authCredential = GoogleAuthProvider.credential(
           idToken: googleAuth.idToken, accessToken: googleAuth.accessToken);
       UserCredential userCredential =
           await auth.signInWithCredential(authCredential);
-
       User? user = userCredential.user!;
       userCollection.doc(user.uid).set({
         "username": userCredential.user?.displayName,

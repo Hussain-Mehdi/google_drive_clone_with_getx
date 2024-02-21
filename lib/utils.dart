@@ -7,7 +7,7 @@ TextStyle textStyle(double fontSize, Color color, FontWeight fontWeight) {
       fontSize: fontSize, fontWeight: fontWeight, color: color);
 }
 
-Color textColor = Color.fromARGB(144, 109, 109, 196);
+Color textColor = const Color.fromARGB(144, 109, 109, 196);
 
 CollectionReference<Map<String, dynamic>> userCollection =
     FirebaseFirestore.instance.collection("users");
